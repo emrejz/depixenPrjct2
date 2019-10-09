@@ -4,6 +4,16 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+ul {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  list-style: none;
+}
+li {
+  box-sizing: border-box;
+  padding: 12px;
+}
 a {
   padding-right: 4px;
   padding-left: 4px;
