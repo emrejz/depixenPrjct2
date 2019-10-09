@@ -35,13 +35,17 @@ nav {
   justify-content: space-between;
 }
 
-.navRight {
+.noMenu {
   margin-left: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 520px;
+}
+.yesMenu {
+  display: none;
+  cursor: pointer;
 }
 .orgatecIcon {
   padding-right: 5px;
@@ -51,10 +55,16 @@ nav {
 .mediaPartner {
   padding-left: 5px;
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 970px) {
   .navLeft {
     flex-wrap: wrap;
     min-width: 210px;
     max-width: 210px;
+  }
+  .noMenu {
+    display: none;
+  }
+  .yesMenu {
+    display: inline;
   }
 }
