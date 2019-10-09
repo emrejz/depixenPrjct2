@@ -43,3 +43,11 @@ nav {
   justify-content: space-around;
   width: 520px;
 }
+.orgatecIcon {
+  padding-right: 5px;
+  border-right: 1px solid gray;
+  margin-right: 5px;
+}
+.mediaPartner {
+  padding-left: 5px;
+}
