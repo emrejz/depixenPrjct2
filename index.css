@@ -3,6 +3,8 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 ul {
   margin: 0px;
@@ -81,6 +83,7 @@ nav {
   padding-right: 70px;
 }
 .modelHeader {
+  align-items: flex-end;
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
@@ -112,7 +115,7 @@ nav {
   height: 40px;
   width: 276px;
   display: flex;
-  float: right;
+
   justify-content: center;
   align-items: center;
   border: 2px solid #e2011b;
@@ -121,6 +124,65 @@ nav {
   height: fit-content;
   width: calc((100vw - 142px) / 2);
 } */
+.modelOpt {
+  width: calc(40vw + 4px);
+  min-width: 300px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2011b;
+  z-index: 99;
+}
+.leftTopBox {
+  width: 290px;
+  height: 80px;
+  z-index: -99;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+.rightBottomBox {
+  width: 66px;
+  height: 4px;
+  z-index: 100;
+  position: absolute;
+  bottom: 0px;
+  right: 57px;
+  background-color: white;
+}
+.modelOptWrapper {
+  min-width: 296px;
+  width: 40vw;
+  height: 276px;
+  background-color: white;
+}
+.modelBoxHeader {
+  margin-left: 20px;
+  margin-top: 14px;
+}
+.modelBodyContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.modelBody {
+  margin: 20px;
+}
+.modellingBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.modelArrow {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+.modelOptImg {
+  width: calc(60vw - 170px);
+}
 @media screen and (max-width: 970px) {
   .navLeft {
     flex-wrap: wrap;
