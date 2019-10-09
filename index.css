@@ -295,7 +295,60 @@ nav {
   align-items: flex-end;
 }
 .coveringBody {
+  display: flex;
+  justify-content: space-between;
   margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+.coveringImg {
+  width: 80%;
+  margin-right: 10px;
+}
+.coveringInfo {
+  margin-top: 30px;
+}
+.coveringArrow {
+  margin-top: 30px;
+  transform: rotateY(180deg);
+}
+.animaticContainer {
+  margin-top: 40px;
+}
+.animaticHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.animaticBody {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.animaticInfo {
+  padding-top: 2px;
+  width: 40vw;
+  height: 300px;
+  background-color: red;
+  position: relative;
+}
+.animaticInfoWrapper {
+  padding: 30px;
+  font-size: 24px;
+  box-sizing: border-box;
+  z-index: 20;
+  margin: auto;
+  width: calc(40vw - 4px);
+  height: 298px;
+  background-color: white;
+  position: relative;
+}
+.animaticLeftBottom {
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  width: 80%;
+  height: 200px;
+  background-color: white;
 }
 @media screen and (max-width: 970px) {
   .navLeft {
