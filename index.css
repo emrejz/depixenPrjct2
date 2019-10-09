@@ -323,7 +323,6 @@ nav {
 .animaticBody {
   margin-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -385,6 +384,21 @@ nav {
   .yesMenu {
     display: inline;
   }
+}
+.footer {
+  border-top: 1px solid gray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socialIcon {
+  width: 32px;
+  margin-right: 4px;
+}
+.mailContainer {
+  display: flex;
+  align-items: center;
 }
 @keyframes rightToLeft {
   from {
