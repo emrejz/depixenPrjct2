@@ -80,12 +80,16 @@ nav {
   padding-left: 70px;
   padding-right: 70px;
 }
-.model {
+.modelHeader {
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .boxContainer {
   width: 220px;
+  margin-right: 50px;
 }
 .top {
   width: 190px;
@@ -113,10 +117,10 @@ nav {
   align-items: center;
   border: 2px solid #e2011b;
 }
-.defaultBox {
+/* .defaultBox {
   height: fit-content;
-  width: calc((100vw - 140px) / 2);
-}
+  width: calc((100vw - 142px) / 2);
+} */
 @media screen and (max-width: 970px) {
   .navLeft {
     flex-wrap: wrap;
