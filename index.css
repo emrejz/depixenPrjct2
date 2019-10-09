@@ -323,10 +323,14 @@ nav {
 .animaticBody {
   margin-top: 40px;
   padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .animaticInfo {
   padding-top: 2px;
-  width: 40vw;
+  width: 34vw;
   height: 300px;
   background-color: red;
   position: relative;
@@ -337,7 +341,7 @@ nav {
   box-sizing: border-box;
   z-index: 20;
   margin: auto;
-  width: calc(40vw - 4px);
+  width: calc(34vw - 4px);
   height: 298px;
   background-color: white;
   position: relative;
@@ -349,6 +353,25 @@ nav {
   width: 80%;
   height: 200px;
   background-color: white;
+}
+.bookAndArrow {
+  position: relative;
+}
+.arrowBookToApple {
+  top: 166px;
+  z-index: 20;
+  left: 277px;
+  position: absolute;
+  transform: rotateZ(162deg);
+}
+.appleAndArrow {
+  position: relative;
+}
+.arrowInfoToApple {
+  top: 457px;
+  left: -20px;
+  position: absolute;
+  transform: rotateY(180deg) rotateZ(37deg);
 }
 @media screen and (max-width: 970px) {
   .navLeft {
