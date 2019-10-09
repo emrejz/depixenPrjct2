@@ -127,7 +127,7 @@ nav {
 .modelOpt {
   width: calc(40vw + 4px);
   min-width: 300px;
-  height: 280px;
+  height: 210px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -156,7 +156,7 @@ nav {
 .modelOptWrapper {
   min-width: 296px;
   width: 40vw;
-  height: 276px;
+  height: 206px;
   background-color: white;
 }
 .modelBoxHeader {
@@ -166,6 +166,8 @@ nav {
 .modelBodyContainer {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
 }
 .modelBody {
   margin: 20px;
@@ -182,7 +184,104 @@ nav {
 }
 .modelOptImg {
   width: calc(60vw - 170px);
+  height: fit-content;
 }
+.prgrmLinks {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more9 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dsLogo {
+  padding-right: 5px;
+  border-right: 1px solid gray;
+  margin-right: 5px;
+}
+.solidLogo {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.ds3 {
+  font-size: 18px;
+  width: 80%;
+}
+.modelFooter {
+  margin-top: 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+.giftCard {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -30px;
+}
+.giftCardContainer {
+  width: 200px;
+}
+.giftTop {
+  border: 2px solid black;
+  margin-left: 20px;
+  border-bottom: 0px;
+}
+.giftMid {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 2px solid black;
+  padding-left: 10px;
+  margin-bottom: 4px;
+}
+.giftBottom {
+  border: 2px solid black;
+  border-top: 0px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+  padding-bottom: 2px;
+}
+.orgLogo {
+  width: 30px;
+  margin-top: 10px;
+}
+.cardEuro {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.euro {
+  border-bottom: 1px solid gray;
+}
+.twoK {
+  padding-left: 70px;
+  font-size: 40px;
+  color: #e2011b;
+}
+.argusLogo {
+  float: right;
+  width: 60px;
+  padding: 20px;
+  padding-bottom: 4px;
+}
+.modelFooterArrow {
+  transform: rotateY(180deg) rotateZ(-25deg);
+  width: 95px;
+  height: 51px;
+}
+
 @media screen and (max-width: 970px) {
   .navLeft {
     flex-wrap: wrap;
