@@ -4,3 +4,35 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+nav {
+  overflow: hidden;
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 103px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+  border-bottom: 2px solid gray;
+  display: flex;
+  background-color: yellow;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 420px;
+  background-color: aqua;
+  justify-content: space-between;
+}
+
+.navRight {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 520px;
+}
