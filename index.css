@@ -4,6 +4,15 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+a {
+  padding-right: 4px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: black;
+}
+.active {
+  color: #e2011b;
+}
 nav {
   overflow: hidden;
   padding-left: 70px;
@@ -14,7 +23,6 @@ nav {
   box-sizing: border-box;
   border-bottom: 2px solid gray;
   display: flex;
-  background-color: yellow;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -24,12 +32,11 @@ nav {
   flex-direction: row;
   align-items: center;
   width: 420px;
-  background-color: aqua;
   justify-content: space-between;
 }
 
 .navRight {
-  background-color: red;
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
