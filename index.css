@@ -25,9 +25,9 @@ a {
 }
 nav {
   overflow: hidden;
+  height: 103px;
   padding-left: 70px;
   padding-right: 70px;
-  height: 103px;
   padding-top: 30px;
   padding-bottom: 22px;
   box-sizing: border-box;
@@ -75,6 +75,47 @@ nav {
 }
 .mediaPartner {
   padding-left: 5px;
+}
+.mainContainer {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.model {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxContainer {
+  width: 220px;
+}
+.top {
+  width: 190px;
+  float: right;
+  border: 2px solid #e2011b;
+  border-bottom: 0px;
+}
+.mid {
+  margin-left: 57px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.bottom {
+  padding-left: 10px;
+  font-size: 32px;
+  border: 2px solid #e2011b;
+  border-top: 0px;
+}
+.clickDetail {
+  height: 40px;
+  width: 276px;
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e2011b;
+}
+.defaultBox {
+  height: fit-content;
+  width: calc((100vw - 140px) / 2);
 }
 @media screen and (max-width: 970px) {
   .navLeft {
