@@ -281,7 +281,16 @@ nav {
   width: 95px;
   height: 51px;
 }
-
+.coveringContainer {
+  margin-top: 40px;
+}
+.coveringContainer .mid {
+  padding-left: 30px;
+  width: 900px;
+}
+.coveringBody {
+  margin-top: 40px;
+}
 @media screen and (max-width: 970px) {
   .navLeft {
     flex-wrap: wrap;
