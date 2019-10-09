@@ -286,7 +286,13 @@ nav {
 }
 .coveringContainer .mid {
   padding-left: 30px;
+  font-size: 32px;
   width: 900px;
+}
+.coveringHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .coveringBody {
   margin-top: 40px;
