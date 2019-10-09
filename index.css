@@ -51,3 +51,10 @@ nav {
 .mediaPartner {
   padding-left: 5px;
 }
+@media screen and (max-width: 820px) {
+  .navLeft {
+    flex-wrap: wrap;
+    min-width: 210px;
+    max-width: 210px;
+  }
+}
