@@ -50,6 +50,7 @@ nav {
 .menuList {
   display: none;
   position: absolute;
+  animation: rightToLeft 2s;
   top: 0px;
   right: 0px;
   width: 40vw;
@@ -76,5 +77,13 @@ nav {
   }
   .yesMenu {
     display: inline;
+  }
+}
+@keyframes rightToLeft {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 40vw;
   }
 }
