@@ -407,7 +407,7 @@ nav {
   margin-right: 4px;
 }
 .mailContainer {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 .detail2 {
@@ -443,6 +443,13 @@ nav {
   margin-left: 60%;
   margin-top: -36px;
   margin-bottom: 30px;
+}
+.footerResp {
+  width: 100%;
+  display: none;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  align-items: center;
 }
 @keyframes rightToLeft {
   from {
@@ -574,7 +581,7 @@ nav {
     transform: rotateZ(223deg);
   }
   .disp1 {
-    display: none;
+    display: none !important;
   }
   .disp2 {
     display: block;
@@ -606,6 +613,14 @@ nav {
   }
   .appleAndArrow {
     margin-left: 0px;
+  }
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footerResp {
+    display: flex !important;
   }
 }
 
