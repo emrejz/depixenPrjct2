@@ -332,6 +332,7 @@ nav {
   align-items: flex-end;
 }
 .animaticInfo {
+  order: 12;
   padding-top: 2px;
   width: 34vw;
   height: 300px;
@@ -363,7 +364,7 @@ nav {
 .bookAndArrow {
   position: relative;
 }
-.arrowBookToApple {
+.arrowBookToApple1 {
   top: 166px;
   z-index: 20;
   left: 277px;
@@ -375,11 +376,20 @@ nav {
   position: relative;
   width: 700px;
 }
-.arrowInfoToApple {
+.arrowInfoToApple1 {
   top: 457px;
   left: -20px;
   position: absolute;
   transform: rotateY(180deg) rotateZ(37deg);
+}
+.arrowInfoToApple2 {
+  transform: rotateY(180deg) rotateZ(222deg);
+  margin-left: 100px;
+}
+.arrowInfoToApple2Container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 .appleImg {
   width: 700px;
@@ -420,6 +430,19 @@ nav {
 }
 .text4 {
   display: none;
+}
+.disp1 {
+  display: block;
+}
+.disp2 {
+  display: none;
+}
+.arrowBookToApple2 {
+  display: none;
+  transform: rotateZ(270deg);
+  margin-left: 60%;
+  margin-top: -36px;
+  margin-bottom: 30px;
 }
 @keyframes rightToLeft {
   from {
@@ -538,7 +561,51 @@ nav {
     display: none;
   }
   .coveringImg {
-    width: 95%;
+    width: 99%;
+  }
+  .animaticBody {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .arrowBookToApple {
+    top: 239px;
+    z-index: 21;
+    left: 155px;
+    transform: rotateZ(223deg);
+  }
+  .disp1 {
+    display: none;
+  }
+  .disp2 {
+    display: block;
+  }
+  .animaticBodyLeft {
+    width: 100%;
+    text-align: center;
+  }
+  .animaticBook {
+    width: 70%;
+  }
+  .arrowBookToApple1 {
+    display: none;
+  }
+  .arrowBookToApple2 {
+    display: block;
+  }
+  .appleAndArrow {
+    width: 100%;
+  }
+  .appleImg {
+    width: 100%;
+  }
+  .animaticInfo {
+    width: 90%;
+  }
+  .animaticInfoWrapper {
+    width: calc(100% - 4px);
+  }
+  .appleAndArrow {
+    margin-left: 0px;
   }
 }
 
