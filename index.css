@@ -117,6 +117,7 @@ nav {
   width: 276px;
   display: flex;
   text-align: center;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   border: 2px solid #e2011b;
@@ -136,7 +137,7 @@ nav {
   z-index: 99;
 }
 .leftTopBox {
-  width: 290px;
+  width: 50%;
   height: 80px;
   z-index: -99;
   position: absolute;
@@ -154,7 +155,6 @@ nav {
   background-color: white;
 }
 .modelOptWrapper {
-  min-width: 296px;
   width: 40vw;
   height: 206px;
   background-color: white;
@@ -621,6 +621,7 @@ nav {
     display: none;
   }
   .coveringImg {
+    margin-right: 0px;
     width: 99%;
   }
 
@@ -650,5 +651,21 @@ nav {
   }
   .text3 {
     display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modelOpt {
+    height: 380px;
+  }
+  .modelOptWrapper {
+    height: 376px;
+    overflow: hidden;
+  }
+  .animaticInfo {
+    height: 340px;
+  }
+  .animaticInfoWrapper {
+    height: 338px;
+    overflow: hidden;
   }
 }
