@@ -106,6 +106,7 @@ nav {
   font-weight: bold;
 }
 .bottom {
+  width: 206px;
   padding-left: 10px;
   font-size: 32px;
   border: 2px solid #e2011b;
@@ -407,6 +408,19 @@ nav {
   align-items: center;
   justify-content: center;
 }
+.text3 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 79px;
+  display: none;
+}
+.bottomText {
+  display: flex;
+  width: 681px;
+}
+.text4 {
+  display: none;
+}
 @keyframes rightToLeft {
   from {
     width: 0vw;
@@ -415,8 +429,33 @@ nav {
     width: 40vw;
   }
 }
+@media screen and (max-width: 1100px) {
+  .mainContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .navLeft {
+    flex-wrap: wrap;
+    min-width: 210px;
+    max-width: 210px;
+  }
+  .noMenu {
+    display: none;
+  }
+  .yesMenu {
+    display: inline;
+  }
+}
 @media screen and (min-width: 891px) {
-  .text1,
+  .text1 {
+    display: block;
+  }
   .detail1 {
     display: flex;
   }
@@ -434,27 +473,20 @@ nav {
     display: inline-block;
   }
 }
-@media screen and (max-width: 970px) {
-  .navLeft {
-    flex-wrap: wrap;
-    min-width: 210px;
-    max-width: 210px;
-  }
-  .noMenu {
-    display: none;
-  }
-  .yesMenu {
-    display: inline;
-  }
-}
+
 @media screen and (max-width: 890px) {
   .text1,
   .detail1 {
     display: none;
   }
-  .text2,
+  .text2 {
+    display: block;
+  }
   .detail2 {
     display: flex;
+  }
+  .text3 {
+    display: block;
   }
   .modelBodyContainer {
     flex-wrap: wrap;
@@ -492,14 +524,32 @@ nav {
     align-items: flex-start;
     width: 79%;
   }
-}
-@media screen and (max-width: 1100px) {
-  .mainContainer {
-    padding-left: 10px;
-    padding-right: 10px;
+  .coveringBody {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  nav {
-    padding-left: 10px;
-    padding-right: 10px;
+  .coveringInfo {
+    margin-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    order: 4;
+  }
+  .coveringArrow {
+    display: none;
+  }
+  .coveringImg {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text4 {
+    display: block;
+  }
+  .text2 {
+    display: none;
+  }
+  .text3 {
+    display: none;
   }
 }
