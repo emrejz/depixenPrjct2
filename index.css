@@ -116,7 +116,7 @@ nav {
   height: 40px;
   width: 276px;
   display: flex;
-
+  text-align: center;
   justify-content: center;
   align-items: center;
   border: 2px solid #e2011b;
@@ -341,7 +341,7 @@ nav {
 }
 .animaticInfoWrapper {
   padding: 30px;
-  font-size: 24px;
+  font-size: 22px;
   box-sizing: border-box;
   z-index: 20;
   margin: auto;
@@ -451,12 +451,65 @@ nav {
   justify-content: flex-start;
   align-items: center;
 }
+.animateClickWrapper {
+  display: flex;
+  width: 100%;
+}
 @keyframes rightToLeft {
   from {
     width: 0vw;
   }
   to {
     width: 40vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .animaticBody {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .animaticBodyLeft {
+    width: 100%;
+    text-align: center;
+  }
+  .animaticBook {
+    width: 70%;
+  }
+  .arrowBookToApple1 {
+    display: none;
+  }
+  .arrowBookToApple2 {
+    display: block;
+  }
+  .arrowInfoToApple1 {
+    top: -110px;
+    left: 140px;
+    z-index: 20;
+    position: absolute;
+    transform: rotateY(180deg) rotateZ(249deg);
+  }
+  .appleAndArrow {
+    width: 100%;
+  }
+  .appleImg {
+    width: 100%;
+  }
+  .animaticInfo {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .animaticInfoWrapper {
+    width: calc(100% - 4px);
+  }
+  .appleAndArrow {
+    margin-left: 0px;
+  }
+  .arrowBookToApple {
+    top: 239px;
+    z-index: 21;
+    left: 155px;
+    transform: rotateZ(223deg);
   }
 }
 @media screen and (max-width: 1100px) {
@@ -570,50 +623,14 @@ nav {
   .coveringImg {
     width: 99%;
   }
-  .animaticBody {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .arrowBookToApple {
-    top: 239px;
-    z-index: 21;
-    left: 155px;
-    transform: rotateZ(223deg);
-  }
+
   .disp1 {
     display: none !important;
   }
   .disp2 {
     display: block;
   }
-  .animaticBodyLeft {
-    width: 100%;
-    text-align: center;
-  }
-  .animaticBook {
-    width: 70%;
-  }
-  .arrowBookToApple1 {
-    display: none;
-  }
-  .arrowBookToApple2 {
-    display: block;
-  }
-  .appleAndArrow {
-    width: 100%;
-  }
-  .appleImg {
-    width: 100%;
-  }
-  .animaticInfo {
-    width: 90%;
-  }
-  .animaticInfoWrapper {
-    width: calc(100% - 4px);
-  }
-  .appleAndArrow {
-    margin-left: 0px;
-  }
+
   .footer {
     flex-direction: row;
     align-items: flex-start;
