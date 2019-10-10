@@ -126,7 +126,6 @@ nav {
 } */
 .modelOpt {
   width: calc(40vw + 4px);
-  min-width: 300px;
   height: 210px;
   position: relative;
   display: flex;
@@ -140,16 +139,16 @@ nav {
   height: 80px;
   z-index: -99;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: -2px;
+  left: -2px;
   background-color: white;
 }
 .rightBottomBox {
   width: 66px;
-  height: 4px;
+  height: 6px;
   z-index: 100;
   position: absolute;
-  bottom: 0px;
+  bottom: -2px;
   right: 57px;
   background-color: white;
 }
@@ -169,6 +168,9 @@ nav {
   padding-bottom: 40px;
   border-bottom: 1px solid gray;
 }
+.modelBodyLeft {
+  order: 4;
+}
 .modelBody {
   margin: 20px;
 }
@@ -183,6 +185,7 @@ nav {
   left: 20px;
 }
 .modelOptImg {
+  order: 2;
   width: calc(60vw - 170px);
   height: fit-content;
 }
@@ -345,6 +348,9 @@ nav {
   background-color: white;
   position: relative;
 }
+.animaticBodyLeft {
+  width: 40%;
+}
 .animaticLeftBottom {
   position: absolute;
   bottom: -4px;
@@ -364,7 +370,9 @@ nav {
   transform: rotateZ(162deg);
 }
 .appleAndArrow {
+  margin-left: 10px;
   position: relative;
+  width: 700px;
 }
 .arrowInfoToApple {
   top: 457px;
@@ -372,19 +380,10 @@ nav {
   position: absolute;
   transform: rotateY(180deg) rotateZ(37deg);
 }
-@media screen and (max-width: 970px) {
-  .navLeft {
-    flex-wrap: wrap;
-    min-width: 210px;
-    max-width: 210px;
-  }
-  .noMenu {
-    display: none;
-  }
-  .yesMenu {
-    display: inline;
-  }
+.appleImg {
+  width: 700px;
 }
+
 .footer {
   border-top: 1px solid gray;
   padding: 20px;
@@ -400,11 +399,107 @@ nav {
   display: flex;
   align-items: center;
 }
+.detail2 {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  order: 3;
+  align-items: center;
+  justify-content: center;
+}
 @keyframes rightToLeft {
   from {
     width: 0vw;
   }
   to {
     width: 40vw;
+  }
+}
+@media screen and (min-width: 891px) {
+  .text1,
+  .detail1 {
+    display: flex;
+  }
+  .modelOptImg {
+    order: 4;
+  }
+  .text2,
+  .detail2 {
+    display: none;
+  }
+  .modelArrow {
+    display: inline-block;
+  }
+  .rightBottomBox {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 970px) {
+  .navLeft {
+    flex-wrap: wrap;
+    min-width: 210px;
+    max-width: 210px;
+  }
+  .noMenu {
+    display: none;
+  }
+  .yesMenu {
+    display: inline;
+  }
+}
+@media screen and (max-width: 890px) {
+  .text1,
+  .detail1 {
+    display: none;
+  }
+  .text2,
+  .detail2 {
+    display: flex;
+  }
+  .modelBodyContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modelArrow {
+    display: none;
+  }
+  .rightBottomBox {
+    display: none;
+  }
+  .modelOptImg {
+    width: 100%;
+  }
+  .modelOpt {
+    width: calc(80vw + 4px);
+    height: 260px;
+    margin: auto;
+  }
+  .modelOptWrapper {
+    width: 80vw;
+    height: 256px;
+  }
+  .modelBodyLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modelFooterArrow {
+    margin-left: 200px;
+    transform: rotateZ(-53deg);
+  }
+  .modelFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 79%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .mainContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
